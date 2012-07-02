@@ -1,0 +1,5 @@
+<h3>Tu carrito: </h3>
+<p>Articulos: <%= cart.total_items %> Importe: <%= number_to_currency(cart.total_price, :unit => "&euro;", :separator => ",", :delimiter => "", :format => "%n %u") %></p>
+
+<%= button_to 'Vaciar carrito', cart, :method => :delete, :confirm => 'Estas seguro?' %>
+ 
